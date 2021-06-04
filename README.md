@@ -62,7 +62,7 @@ Update the iX document `adding-snippets.md` under your google3 GDA workspace to 
 
 <img width="949" alt="Screen Shot 2021-06-03 at 21 43 49" src="https://user-images.githubusercontent.com/7249208/120733305-e6c8aa80-c4b4-11eb-983e-efc3f06b4592.png">
 
-> 🎯 HINT 1: To point to a region_tag in specific **git branch** use the **git_revision** attribute of the **includecode** template.  
+> 🎯 HINT 1: To point to a region_tag from a specific **git branch** use the **git_revision** attribute of the **includecode** template.  
 > 🎯 HINT 2: The expected format for the **git_revision** attribute is `refs/heads/<BRANCH_NAME>`
 
 #### Step 4:
@@ -78,4 +78,3 @@ Stage and view the iX document _(adding-snippets.md)_ through `Cider`.
 - Add 5 different region tags to each of the different sections ([1](https://github.com/GoogleDeveloperAcademy/code-snippets/blob/main/android_client.kt#L9), [2](https://github.com/GoogleDeveloperAcademy/code-snippets/blob/main/android_client.kt#L15), [3](https://github.com/GoogleDeveloperAcademy/code-snippets/blob/main/android_client.kt#L18), [4](https://github.com/GoogleDeveloperAcademy/code-snippets/blob/main/android_client.kt#L30), [5](https://github.com/GoogleDeveloperAcademy/code-snippets/blob/main/android_client.kt#L42)) in the [`android_client.kt`](/android_client.kt) file and include each of them seperately in place of the 5 `TODO`s in the iX document _adding-snippets.md_
 - Try to highlight specific sections of different sections
 - Try if you can create a second language tab for `Groovy` _(you can include the same Kotlin code to practice)_
-
