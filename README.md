@@ -31,7 +31,7 @@ Using the **includecode** template tag in the iX document and **region tags** in
 ---
 
 ### Step 1:
-Check if this repository has been set up to be mirrored into `Gerrit (Git-on-Borg)`
+Check if this repository has been set up to be mirrored into `Gerrit (Git-on-Borg)`.
 - Go to: https://github.git.corp.google.com/
 - Paste `GoogleDeveloperAcademy` in the repository to find for field
 - Press `FIND` and check if the `code-snippets` repository has been mirrored
@@ -44,8 +44,38 @@ cd code-snippets
 git checkout -b <USERNAME>
 git push --set-upstream origin sbm
 ```
-![image](https://user-images.githubusercontent.com/7249208/120732573-900ea100-c4b3-11eb-9237-4e93cbfaba6f.png)
+![image](https://user-images.githubusercontent.com/7249208/120732817-f09dde00-c4b3-11eb-80e4-464a97c59221.png)
 
 
 #### Step 2:
-Add a **region tag** covering the entire file
+Add a **region tag** covering the entire source code file [`android_client.kt`](/android_client.kt).
+```sh
+# add the region as explained in the slides encompassing the whole file
+# save the file
+git add android_client.kt
+git commit -m "chore: add first region tag"
+git push
+```
+
+#### Step 3:
+Update the iX document `adding-snippets.md` under your google3 GDA workspace to include code from this file using the **includecode** template tag. For this step include the code in the space where you find the first **TODO** in the document.
+
+<img width="949" alt="Screen Shot 2021-06-03 at 21 43 49" src="https://user-images.githubusercontent.com/7249208/120733305-e6c8aa80-c4b4-11eb-983e-efc3f06b4592.png">
+
+> 🎯 HINT 1: To point to a region_tag in specific **git branch** use the **git_revision** attribute of the **includecode** template.  
+> 🎯 HINT 2: The expected format for the **git_revision** attribute is `refs/heads/<BRANCH_NAME>`
+
+#### Step 4:
+Stage and view the iX document _(adding-snippets.md)_ through `Cider`.
+- **Cider > Tools > DevSite > Stage current file**
+- **Cider > Tools > DevSite > Open staged file**
+
+🚀 ⚡**YOU SHOULD SEE THE CODE FROM THE `android_client.kt` FILE RENDERED IN THE DOCUMENT** ⚡🚀
+
+---
+
+#### Bonus steps:
+- Add 5 different region tags to each of the different sections ([1](https://github.com/GoogleDeveloperAcademy/code-snippets/blob/main/android_client.kt#L9), [2](https://github.com/GoogleDeveloperAcademy/code-snippets/blob/main/android_client.kt#L15), [3](https://github.com/GoogleDeveloperAcademy/code-snippets/blob/main/android_client.kt#L18), [4](https://github.com/GoogleDeveloperAcademy/code-snippets/blob/main/android_client.kt#L30), [5](https://github.com/GoogleDeveloperAcademy/code-snippets/blob/main/android_client.kt#L42)) in the [`android_client.kt`](/android_client.kt) file and include each of them seperately in place of the 5 `TODO`s in the iX document _adding-snippets.md_
+- Try to highlight specific sections of different sections
+- Try if you can create a second language tab for `Groovy` _(you can include the same Kotlin code to practice)_
+
