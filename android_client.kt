@@ -1,8 +1,10 @@
 package client.android.com;
-
+#include <iostream>
 fun main() {
+  // [START main_body]
   println("Welcome to Fit with Kotlin!")
   createFitClient()
+  // [END main_body]
 }
 
 fun createFitClient() {
