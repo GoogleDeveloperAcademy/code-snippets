@@ -42,7 +42,7 @@ Clone this repository locally and create new branch to work on. After completing
 git clone https://github.com/GoogleDeveloperAcademy/code-snippets
 cd code-snippets
 git checkout -b <USERNAME>
-git push --set-upstream origin sbm
+git push --set-upstream origin <USERNAME>
 ```
 ![image](https://user-images.githubusercontent.com/7249208/120732817-f09dde00-c4b3-11eb-80e4-464a97c59221.png)
 
