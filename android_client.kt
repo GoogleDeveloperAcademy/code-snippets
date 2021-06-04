@@ -1,4 +1,4 @@
-# [START android_client]
+// [START android_client]
 package client.android.com;
 
 fun main() {
@@ -61,4 +61,4 @@ private fun accessGoogleFit() {
     })
     .addOnFailureListener({ e -> Log.d(TAG, "OnFailure()", e) })
 }
-# [END android_client]
+// [END android_client]
